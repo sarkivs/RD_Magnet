@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-Debrid Magnet Sender</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="popup.js" type="module"></script>
+  </head>
+  <body class="popup-shell">
+    <main class="popup">
+      <header>
+        <img src="icons/icon.svg" alt="" width="36" height="36">
+        <div>
+          <h1>Real-Debrid</h1>
+          <p id="status">Checking settings...</p>
+        </div>
+      </header>
+
+      <div class="summary-row">
+        <span>Mode</span>
+        <strong id="mode">-</strong>
+      </div>
+
+      <label class="popup-field">
+        <span>Magnet or torrent link</span>
+        <textarea id="magnetInput" rows="4" spellcheck="false" placeholder="Paste a magnet link or .torrent URL"></textarea>
+      </label>
+
+      <button id="sendMagnet" type="button">Send to Real-Debrid</button>
+
+      <section class="activity">
+        <span>Last activity</span>
+        <p id="lastActivity">No magnet has been sent yet.</p>
+      </section>
+
+      <button id="openOptions" type="button">Open settings</button>
+    </main>
+  </body>
+</html>

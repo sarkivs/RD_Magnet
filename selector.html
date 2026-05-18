@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select Real-Debrid Torrent Files</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="selector.js" type="module"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="selector-panel">
+        <header class="page-header">
+          <img src="icons/icon.svg" alt="" width="44" height="44">
+          <div>
+            <h1 id="torrentName">Loading torrent...</h1>
+            <p id="torrentStatus">Waiting for Real-Debrid to read the magnet metadata.</p>
+          </div>
+        </header>
+
+        <div class="toolbar">
+          <button id="selectAll" class="secondary" type="button">Select all</button>
+          <button id="selectNone" class="secondary" type="button">Select none</button>
+          <span id="selectionSummary">0 files selected</span>
+        </div>
+
+        <div id="fileList" class="file-list" aria-live="polite"></div>
+
+        <footer class="sticky-actions">
+          <p id="statusMessage" class="status-message" role="status"></p>
+          <button id="startDownload" type="button" disabled>Start Real-Debrid download</button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

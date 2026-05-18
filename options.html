@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-Debrid Magnet Sender Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="options.js" type="module"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="settings-panel">
+        <header class="page-header">
+          <img src="icons/icon.svg" alt="" width="44" height="44">
+          <div>
+            <h1>Real-Debrid Magnet Sender</h1>
+            <p>Send magnet links and torrent files straight to your Real-Debrid torrents.</p>
+          </div>
+        </header>
+
+        <form id="settingsForm">
+          <label class="field">
+            <span>API token</span>
+            <input id="apiToken" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your Real-Debrid API token">
+          </label>
+
+          <fieldset>
+            <legend>File selection</legend>
+            <label class="choice">
+              <input type="radio" name="selectionMode" value="all">
+              <span>
+                <strong>Download all files automatically</strong>
+                <small>Every magnet or torrent link is added and all torrent files are selected.</small>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="selectionMode" value="video">
+              <span>
+                <strong>Download video files only</strong>
+                <small>Selects common video formats such as MKV, MP4, AVI, MOV, WEBM, M4V, TS, and WMV.</small>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="selectionMode" value="manual">
+              <span>
+                <strong>Ask which files to download</strong>
+                <small>A new tab opens with the torrent file list before Real-Debrid starts it.</small>
+              </span>
+            </label>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit">Save settings</button>
+            <button id="testAuth" class="secondary" type="button">Test token</button>
+          </div>
+
+          <p id="statusMessage" class="status-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
