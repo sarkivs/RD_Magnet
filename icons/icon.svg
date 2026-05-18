@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Real-Debrid Magnet Sender">
+  <rect width="128" height="128" rx="24" fill="#d53737"/>
+  <path fill="#fff" d="M35 32h24c10 0 18 8 18 18 0 7-4 13-10 16l18 30H68L53 69h-4v27H35V32Zm14 13v12h10c3 0 5-3 5-6s-2-6-5-6H49Z"/>
+  <path fill="#fff" opacity=".86" d="M88 31h13v17h17v13h-17v17H88V61H71V48h17V31Z"/>
+</svg>
