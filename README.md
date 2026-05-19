@@ -5,7 +5,7 @@ A small unpacked Chrome extension that sends magnet links and torrent files to R
 ## What it does
 
 - Left-click a magnet link or obvious `.torrent` link on a web page to send it to Real-Debrid.
-- Cancels `.torrent` browser downloads and sends the torrent file to Real-Debrid instead.
+- Sends the torrent file to Real-Debrid.
 - Right-click a link and choose **Send magnet/torrent to Real-Debrid**.
 - Choose one of three modes:
   - **Download all files automatically**: selects every file in the torrent.
